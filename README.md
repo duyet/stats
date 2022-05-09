@@ -28,3 +28,22 @@ graph LR
     data --->  api
 
 ```
+
+## Data Schema
+
+```mermaid
+erDiagram
+
+RAW {
+    string source
+    string raw
+    int    value
+    date   createdAt
+}
+
+SUMMARY {
+    string source
+    int    value
+    date   updatedAt
+}
+```
